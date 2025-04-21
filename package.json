@@ -10,6 +10,7 @@
     "@prisma/client": "^6.5.0",
     "bcryptjs": "^3.0.2",
     "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
     "debug": "~2.6.9",
     "dotenv": "^16.4.7",
     "express": "~4.16.1",

@@ -8,6 +8,8 @@ services:
       - db
     environment:
       DATABASE_URL: "mongodb://monty:pass@db:27017/mydatabase?authSource=admin&directConnection=true"
+    volumes:
+      - ./uploads:/app/uploads   # Здесь монтируется папка на хосте в контейнер
   db:
     image: prismagraphql/mongo-single-replica:5.0.3
     ports:
@@ -15,6 +17,4 @@ services:
     environment: 
       MONGO_INITDB_ROOT_USERNAME: monty 
       MONGO_INITDB_ROOT_PASSWORD: pass
-
-
 
